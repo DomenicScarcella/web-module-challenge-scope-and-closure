@@ -43,6 +43,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+	Closure is when a local function has access to variables and functions outside the local function, rather than only to those variables within its own function.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +67,18 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+	When the console.log gets the ${name}, because that value lives outside the {} boundary of that local function.
+
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+	The parameters for each roll are the same, but the specific random number used to determine the roll result will change.
+	
+
 c. What is the lexical scope of `newRoll`? 
+
+	newRoll is nested in "return function(){}" and doesn't require anything outside that local function in order to complete its action.
 
 
 ### Task 3 - Stretch Goals
